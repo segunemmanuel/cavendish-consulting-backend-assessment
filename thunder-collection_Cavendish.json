@@ -1,0 +1,215 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Cavendish",
+    "collectionId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+    "dateExported": "2024-07-24T16:59:25.316Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "64947092-c486-4c30-abee-78eb60a839cd",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Get all websites",
+            "url": "http://127.0.0.1:8000/api/websites",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-07-24T00:34:22.045Z",
+            "modified": "2024-07-24T00:34:26.746Z",
+            "headers": []
+        },
+        {
+            "_id": "b2734de8-27ad-40b4-be14-edac40f8fc3c",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Search websites",
+            "url": "http://127.0.0.1:8000/api/websites/search",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-24T00:34:48.265Z",
+            "modified": "2024-07-24T02:18:31.961Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"term\":\"weimann.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4687c61d-2fb1-47ec-b70d-5467c5ca70cf",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Register  user",
+            "url": "http://127.0.0.1:8000/api/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-07-24T01:03:20.871Z",
+            "modified": "2024-07-24T02:22:00.313Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"username\": \"joh1n.doe\",\r\n  \"email\": \"john.doe1@example.com\",\r\n  \"password\": \"securePassword1213\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "d91dde7e-25e1-4e0d-b26a-581bad646367",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://127.0.0.1:8000/api/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-07-24T02:23:28.509Z",
+            "modified": "2024-07-24T02:35:20.267Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n  \"email\": \"john.doe1@example.com\",\n  \"password\": \"securePassword1213\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "0139da5d-df34-4961-ae81-567768b28b33",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Submit website",
+            "url": "http://127.0.0.1:8000/api/websites",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-07-24T02:25:53.787Z",
+            "modified": "2024-07-24T12:10:12.344Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"schneiderss.com\",\n  \"url\": \"http://www.kshlerin.com/quia-id-voluptas-repudiandae\",\n  \"categories\":[1,3,4]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "5|urSjEYiX6eb6R52W3f2CkkYPZzArzPgYRXK1Plwx"
+            }
+        },
+        {
+            "_id": "44bce55b-3d05-4472-b3f2-24b9fa2955f9",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Logout",
+            "url": "http://127.0.0.1:8000/api/logout",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-07-24T12:08:23.802Z",
+            "modified": "2024-07-24T12:10:34.221Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "5|urSjEYiX6eb6R52W3f2CkkYPZzArzPgYRXK1Plwx"
+            }
+        },
+        {
+            "_id": "18ab7e3f-2ae2-482a-b0d1-dca4b329d968",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Vote",
+            "url": "http://127.0.0.1:8000/api/websites/2/vote",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-07-24T12:11:55.146Z",
+            "modified": "2024-07-24T12:18:22.854Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user_id\":\"4\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "5|urSjEYiX6eb6R52W3f2CkkYPZzArzPgYRXK1Plwx"
+            }
+        },
+        {
+            "_id": "2fe678b0-35e1-4180-968c-cf9d0125e40f",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Unvote",
+            "url": "http://127.0.0.1:8000/api/websites/2/vote",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-07-24T12:19:19.081Z",
+            "modified": "2024-07-24T12:40:24.191Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user_id\":\"11\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "5|urSjEYiX6eb6R52W3f2CkkYPZzArzPgYRXK1Plwx"
+            }
+        },
+        {
+            "_id": "bad53e61-14cf-4155-a968-5980ee0d3b76",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Delete website",
+            "url": "http://127.0.0.1:8000/api/websites/5",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-07-24T12:51:51.400Z",
+            "modified": "2024-07-24T13:10:39.063Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "5|urSjEYiX6eb6R52W3f2CkkYPZzArzPgYRXK1Plwx"
+            }
+        },
+        {
+            "_id": "c4b47c56-1999-4d41-84d9-a1b9465b5bd7",
+            "colId": "2789c82c-0826-4488-90f7-d65cc99fb2be",
+            "containerId": "",
+            "name": "Make current user admin",
+            "url": "http://127.0.0.1:8000/api/make-admin",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-07-24T12:59:47.896Z",
+            "modified": "2024-07-24T12:59:57.191Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "5|urSjEYiX6eb6R52W3f2CkkYPZzArzPgYRXK1Plwx"
+            }
+        }
+    ],
+    "ref": "OOrHHGeG78XhTHj6xpJyqgdRVpkHLjFFUOwk0_7lcQ3ca035VHJ7_imxubuHcJeGZcmxU9IjD1-T2Oia-ckfxg"
+}

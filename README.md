@@ -184,9 +184,7 @@ This repository contains the Cavendish API, built using Laravel. The API provide
 
 You can use the Postman collection to test the API endpoints. Follow these steps to import the Postman collection:
 
-1. **Download the Postman collection file**
-
-    [Download Postman Collection](path/to/your/thunder-collection_Cavendish.json)
+1. **Download the Postman collection file from the root folder (thunder-collection_Cavendish.json)**
 
 2. **Open Postman**
 
